@@ -69,3 +69,50 @@ button:hover, .btn:hover {
   transform: scale(1.08) rotate(-2deg);
   box-shadow: 0 0 32px #ffc371, 0 8px 40px #ff5f6d;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+th, td {
+  padding: 0.75em 1em;
+  text-align: center;
+}
+
+th {
+  background-color: #003366;
+  color: #fff;
+  font-size: 1.05em;
+  letter-spacing: 1px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f6fa;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e9eef3;
+}
+
+tr:hover {
+  background-color: #dbeafe;
+  transition: background 0.2s;
+}
+
+td {
+  border-bottom: 1px solid #d0d7de;
+}
+
+caption {
+  caption-side: top;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #003366;
+  letter
+
