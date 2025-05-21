@@ -1,1 +1,71 @@
+/* Flashy Animated Gradient Background */
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(270deg, #ff5f6d, #ffc371, #47e8e2, #845ec2, #ff5f6d);
+  background-size: 200% 200%;
+  animation: gradientBG 8s ease-in-out infinite;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glowing Header */
+h1 {
+  font-size: 3em;
+  text-align: center;
+  color: #fff;
+  text-shadow:
+    0 0 8px #ff5f6d,
+    0 0 24px #ffc371,
+    0 0 40px #845ec2;
+  animation: glow 2.5s alternate infinite;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 8px #ff5f6d, 0 0 24px #ffc371, 0 0 40px #845ec2;
+  }
+  to {
+    text-shadow: 0 0 24px #47e8e2, 0 0 48px #845ec2, 0 0 70px #ff5f6d;
+  }
+}
+
+/* Stylish Paragraph */
+p {
+  font-size: 1.4em;
+  background: rgba(0,0,0,0.3);
+  border-radius: 12px;
+  padding: 16px 24px;
+  box-shadow: 0 4px 32px rgba(255,255,255,0.15);
+}
+
+/* Flashy Button Example */
+button, .btn {
+  background: linear-gradient(90deg, #ff5f6d, #ffc371, #47e8e2);
+  background-size: 200% 200%;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 14px 32px;
+  font-size: 1.2em;
+  margin-top: 24px;
+  cursor: pointer;
+  box-shadow: 0 0 16px #47e8e2, 0 4px 24px #845ec2;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: gradientBG 6s linear infinite;
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 0 32px #ffc371, 0 8px 40px #ff5f6d;
+}
